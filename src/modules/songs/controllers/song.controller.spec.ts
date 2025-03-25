@@ -2,7 +2,7 @@ import { SongController } from '#modules/index'
 import { LyricsModel, SongModel } from '#modules/songs/models'
 import { beforeAll, describe, expect, it } from 'vitest'
 import type { z } from 'zod'
-
+// "start": "bun dist/server.js",
 describe('SongController', () => {
   let searchController: SongController
 
