@@ -34,9 +34,9 @@ describe('SongController', () => {
     expect(() => LyricsModel.parse(data)).not.toThrow()
   })
 
-  // it('retrieve song suggestions', async () => {
-  //   const response = await searchController.controller.request('/songs/yDeAS8Eh/suggestions?limit=5')
-  //   const suggestions = await response.json()
-  //   expect(suggestions).toMatchSnapshot()
-  // })
+  it('retrieve song suggestions', async () => {
+    const response = await searchController.controller.request('/songs/yDeAS8Eh/suggestions?limit=5')
+    const suggestions = await response.json()
+    expect(suggestions).toMatchSnapshot()
+  })
 })
