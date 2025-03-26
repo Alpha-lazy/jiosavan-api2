@@ -27,8 +27,7 @@
     }
   },
   "scripts": {
-    "dev": "bun run --hot src/server.ts",
-    
+    "dev": "bun run --hot src/server.ts",   
     "start": "bun run --hot src/server.ts",
     "build": "rm -rf dist && tsc && tsc-alias",
     "format": "prettier --write \"./**/*.{js,ts,json}\"",
@@ -74,5 +73,8 @@
     "typescript": "^5.7.3",
     "vitest": "^3.0.9",
     "wrangler": "^3.103.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
